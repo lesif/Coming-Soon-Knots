@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Knots & Grain</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+      <!--Main Navigation-->
+  <header>
+    <!-- Intro settings -->
+    <style>
+      /* Default height for small devices */
+      #intro {
+        height: 600px;
+        /* Margin to fix overlapping fixed navbar */
+        margin-top: 58px;
+      }
+      @media (max-width: 991px) {
+              #intro {
+              /* Margin to fix overlapping fixed navbar */
+              margin-top: 45px;
+      	}
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #3a3a31;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" target="_blank" href="https://mdbootstrap.com/docs/standard/">
+        <img src="img/logo.png" height="32" alt="" loading="lazy"
+        style="margin-top: -3px;" />
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbar1"
+          aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                target="_blank">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">Contact Us</a>
+            </li>
+          </ul>
+          <!-- Social Links -->
+          <ul class="navbar-nav d-flex flex-row">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <div id="intro" class="p-5 text-center bg-image shadow-1-strong"
+      style="background-image: url('https://scontent.fman4-2.fna.fbcdn.net/v/t1.6435-9/119637144_619334025430534_8036530460706534670_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=nllkdxS3vqAAX-ZV_ac&_nc_ht=scontent.fman4-2.fna&oh=00_AfDO1odaRXHLZHGxywIxIj1mW0omSxILlEP3dOWUMTGwig&oe=63950E3C');">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white px-4">
+            <h1 class="mb-3">Coming Soon!</h1>
+
+            <!-- Time Counter -->
+            <h3 id="time-counter" class="border border-light my-4 p-4"></h3>
+
+            <p>We're working really hard to get the website up and running!</p>
+
+            <p>Until then have a look at our Facebook page</p>
+
+            <a class="btn btn-outline-light btn-lg m-2" href="https://www.facebook.com/knotsandgrainuk" role="button"
+              rel="nofollow" target="_blank">Take me there</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+  <!--Main Navigation-->
+
+      <!--Section: Content-->
+    </div>
+  </main>
+  <!--Main layout-->
+  <main class="text-lg-start" style="background-color: #555549;">
+    <div class="py-4 text-center">
+      <a role="button" class="btn btn-primary btn-lg m-2"
+        href="https://mailchi.mp/049e46821313/knots-grain" rel="nofollow" target="_blank">
+        Subscribe to our newsletter
+      </a>
+    </div>
+    </main>
+  <!--Footer-->
+  <footer class="text-lg-start mt-auto" style="background-color: #555549;">
+    <hr class="m-0" />
+    <!-- Copyright -->
+    <div class="text-center p-3 text-light" style="background-color: #2c2c26;">
+      © 2022 Copyright:
+      <a class="text-light" href="#">KnotsAndGrain.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+
+    <!-- Time Counter -->
+    <script type="text/javascript">
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jan 1, 2023 00:00:00");
+      countDownDate.setDate(countDownDate.getDate() + 30);
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById('time-counter').innerHTML =
+          days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById('time-counter').innerHTML = 'EXPIRED';
+        }
+      }, 1000);
+    </script>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
